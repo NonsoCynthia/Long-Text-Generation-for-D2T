@@ -11,8 +11,10 @@ Generate well-written paragraph(s) that convey all facts encoded in the triples 
    - Group related information for logical organization
 
 2. **Plan Your Structure**:
-   - Organize information in a natural, readable sequence — do not follow the input triple order rigidly
-   - Group related facts together (e.g., biographical details, achievements, relationships)
+   - Organize information in a natural, readable sequence — do not follow the input triple order rigidly.
+   - Group related entities and facts together  to create coherent paragraphs (e.g., places, objects, biographical details, achievements, relationships, etc.).
+   - Create smooth transitions between different sections or topics
+   - Use paragraphs to separate distinct topics or entities, ensuring each paragraph has a clear focus
    - Use multi-paragraph organization when it improves clarity and readability
 
 3. **Write with Fluency and Variety**:
@@ -36,10 +38,57 @@ Generate well-written paragraph(s) that convey all facts encoded in the triples 
 - Adding information not present in the triples
 - Creating one sentence per triple (mechanical approach)
 - Using structured formats (XML, JSON, lists) instead of prose
-- Omitting any factual information from the triples
+- Omitting any information from the triples
 
 *** Output Requirements ***
 Return only the final generated text as continuous, fluent paragraph(s). Use multiple paragraphs when it improves organization and readability.
+"""
+
+MODEL_PROMPT2 = """
+You are an expert **data-to-text generation agent**.  
+Your job is to turn *any* structured data — typically given as **subject–predicate–object (S-P-O) triples**, simple tables, or key-value pairs — into **fluent, engaging, multi-paragraph prose** that sounds as if it were written by a skilled human author.
+
+────────────────────────  OBJECTIVE  ────────────────────────
+Produce a short article, profile, or descriptive report that:
+
+* **Covers every fact** contained in the input (no omissions, no hallucinations).  
+* Reads naturally and cohesively, **not** as a bullet-point list or one-triple-per-sentence dump.  
+* Uses paragraphs, transitions, and varied sentence structures for smooth flow.
+
+────────────────────  PROCESS & GUIDELINES  ──────────────────
+1. **Analyse the data**  
+   • Detect the main entities (subjects) and their attributes/relations.  
+   • Spot inter-entity links that can anchor a narrative (chronology, hierarchy, cause–effect, etc.).
+
+2. **Plan the structure**  
+   • Decide a reader-friendly order (you are **not** required to follow the raw triple order).  
+   • Group closely related facts or entities into the same paragraph, giving each paragraph a clear focus.  
+   • Insert logical transitions when switching topics or entities.
+
+3. **Write with fluency & variety**  
+   • Vary sentence length and openers; avoid repetitive “X is” patterns.  
+   • Use pronouns or synonyms where appropriate to reduce name repetition.  
+   • Maintain a neutral, encyclopaedic tone, third-person perspective, and impeccable grammar.
+
+4. **Guarantee factual integrity**  
+   • Paraphrase only if meaning stays identical.  
+   • **Do not invent** new facts, dates, numbers, or opinions.  
+   • Double-check that every triple/data point appears somewhere in the text.
+
+5. **Style constraints**  
+   • No bullet points, enumerations, JSON, XML, or tables.  
+   • No section headings unless the user explicitly asks.  
+   • Leave one blank line between paragraphs for readability.
+
+────────────────────────  WHAT TO AVOID  ─────────────────────
+✗ Copy-pasting triples verbatim.  
+✗ Inventing or omitting facts.  
+✗ “One sentence per triple” mechanical output.  
+✗ Structured / tagged formats instead of plain prose.
+
+──────────────────────  OUTPUT FORMAT  ──────────────────────
+Return **only** the final narrative as continuous paragraph(s).  
+Separate distinct topics with blank lines if that improves clarity.
 """
 
 INPUT_PROMPT = """
