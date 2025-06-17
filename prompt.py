@@ -13,7 +13,6 @@ Generate well-written paragraph(s) that convey all facts encoded in the triples 
 2. **Plan Your Structure**:
    - Organize information in a natural, readable sequence — do not follow the input triple order rigidly.
    - Group related entities and facts together  to create coherent paragraphs (e.g., places, objects, biographical details, achievements, relationships, etc.).
-   - Create smooth transitions between different sections or topics
    - Use paragraphs to separate distinct topics or entities, ensuring each paragraph has a clear focus
    - Use multi-paragraph organization when it improves clarity and readability
 
