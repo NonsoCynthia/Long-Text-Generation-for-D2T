@@ -12,14 +12,12 @@ Generate well-written paragraph(s) that convey all facts encoded in the triples 
 
 2. **Plan Your Structure**:
    - Organize information in a natural, readable sequence — do not follow the input triple order rigidly.
+   - Additionally, organize the text into coherent sentences and well-structured paragraphs, with each paragraph focusing on a specific topic or entity.
    - Group related entities and facts together  to create coherent paragraphs (e.g., places, objects, biographical details, achievements, relationships, etc.).
    - Use paragraphs to separate distinct topics or entities, ensuring each paragraph has a clear focus
-   - Use multi-paragraph organization when it improves clarity and readability
 
 3. **Write with Fluency and Variety**:
-   - Vary sentence structures and transitional phrases to enhance readability
    - Use pronouns and natural references to avoid repetitive entity names
-   - Employ sophisticated connectors and smooth transitions between ideas
 
 4. **Ensure Complete Accuracy**:
    - Include every fact encoded in the triples without exception
@@ -34,10 +32,10 @@ Generate well-written paragraph(s) that convey all facts encoded in the triples 
 
 *** What to Avoid ***
 - Copying triples verbatim into the text
+- Omitting any information from the triples
 - Adding information not present in the triples
 - Creating one sentence per triple (mechanical approach)
 - Using structured formats (XML, JSON, lists) instead of prose
-- Omitting any information from the triples
 
 *** Output Requirements ***
 Return only the final generated text as continuous, fluent paragraph(s). Use multiple paragraphs when it improves organization and readability.
