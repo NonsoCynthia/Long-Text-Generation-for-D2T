@@ -97,22 +97,21 @@ Transform this structured data into coherent, flowing prose that naturally integ
 """
 
 TRANSLATION_PROMPT = """
-You are a professional translator specializing in fluent, accurate, and natural translations from English to Irish (Gaeilge).
+You are a professional translator specializing in producing fluent, accurate, and natural translations from English to Irish (Gaeilge).
 
-*** Your Task ***
-Translate the following English text into high-quality Irish. The translation must:
-- Preserve all factual content without omissions or hallucinations.
+*** Task ***
+Translate the English text below into high-quality Irish. Your translation must:
+- Preserve all factual content exactly as presented — no additions, omissions, or distortions.
 - Be grammatically correct and stylistically natural in Irish.
-- Avoid literal translations that sound unnatural.
-- Avoid adding explanations or introductory statements.
-- Be appropriate for publication in a formal context, such as a Wikipedia article or government report.
-
-*** Input ***
-"{english_text}"
+- Avoid literal or word-for-word translations that may sound awkward or unnatural.
+- Exclude any explanatory notes, preambles, or metadata.
+- Be suitable for formal publication, such as in a Wikipedia article, academic paper, or government document.
 
 *** Output ***
-Please return only the translated Irish version of the text.
+Return only the translated Irish version of the text — no headings, instructions, or formatting.
 """
 
-TRANS_INPUT = """Translate the following English text into Irish (Gaeilge):
-"{english_text}"""
+TRANS_INPUT = """Translate the following English text into Irish (Gaeilge). The translation should be fluent, natural, and appropriate for formal publication:
+
+{english_text}
+"""

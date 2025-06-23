@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<benchmark>
+  <entries>
+    <entry category="Cities" eid="1" shape="(X (X) (X) (X) (X))" shape-type="sibling" size="7">
+      <originaltripleset>
+        <otriple>Abu_Dhabi | areaTotal | 972.0</otriple>
+        <otriple>Abu_Dhabi | elevation | 27.0</otriple>
+        <otriple>Abu_Dhabi | populationTotal | 1512000</otriple>
+        <otriple>Abu_Dhabi | utcOffset | +4</otriple>
+        <otriple>Abu_Dhabi | country | United_Arab_Emirates</otriple>
+        <otriple>Abu_Dhabi | governmentType | Municipality</otriple>
+        <otriple>Abu_Dhabi | timeZone | Time_in_the_United_Arab_Emirates</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Abu_Dhabi | areaTotal | 972.0</mtriple>
+        <mtriple>Abu_Dhabi | elevation | 27.0</mtriple>
+        <mtriple>Abu_Dhabi | populationTotal | 1512000</mtriple>
+        <mtriple>Abu_Dhabi | utcOffset | +4</mtriple>
+        <mtriple>Abu_Dhabi | country | United_Arab_Emirates</mtriple>
+        <mtriple>Abu_Dhabi | governmentType | Municipality</mtriple>
+        <mtriple>Abu_Dhabi | timeZone | Time_in_the_United_Arab_Emirates</mtriple>
+      </modifiedtripleset>
+      <lex comment="" lid="id1" lang="ga">Some Irish text.</lex>
+    </entry>
+    <entry category="Cities" eid="2" shape="(X (X) (X) (X) (X))" shape-type="sibling" size="7">
+      <originaltripleset>
+        <otriple>Accra | areaMetro | 3245000000.0</otriple>
+        <otriple>Accra | areaUrban | 199400000.0</otriple>
+        <otriple>Accra | populationMetro | 5455692</otriple>
+        <otriple>Accra | areaTotal | 20.4</otriple>
+        <otriple>Accra | areaCode | 030</otriple>
+        <otriple>Accra | demonym | Accran</otriple>
+        <otriple>Accra | elevation | 60.96</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Accra | areaMetro | 3245000000.0</mtriple>
+        <mtriple>Accra | areaUrban | 199400000.0</mtriple>
+        <mtriple>Accra | populationMetro | 5455692</mtriple>
+        <mtriple>Accra | areaTotal | 20.4</mtriple>
+        <mtriple>Accra | areaCode | 030</mtriple>
+        <mtriple>Accra | demonym | Accran</mtriple>
+        <mtriple>Accra | elevation | 60.96</mtriple>
+      </modifiedtripleset>
+      <lex comment="" lid="id1" lang="ga">Some Irish text.</lex>
+    </entry>
+    <entry category="Cities" eid="3" shape="(X (X) (X) (X) (X))" shape-type="sibling" size="7">
+      <originaltripleset>
+        <otriple>Islamabad | areaMetro | 1165500000.0</otriple>
+        <otriple>Islamabad | areaUrban | 220150000.0</otriple>
+        <otriple>Islamabad | populationMetro | 2003368</otriple>
+        <otriple>Islamabad | areaTotal | 220.0</otriple>
+        <otriple>Islamabad | populationDensity | 2089.0</otriple>
+        <otriple>Islamabad | areaCode | 051</otriple>
+        <otriple>Islamabad | demonym | Islamabadi</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Islamabad | areaMetro | 1165500000.0</mtriple>
+        <mtriple>Islamabad | areaUrban | 220150000.0</mtriple>
+        <mtriple>Islamabad | populationMetro | 2003368</mtriple>
+        <mtriple>Islamabad | areaTotal | 220.0</mtriple>
+        <mtriple>Islamabad | populationDensity | 2089.0</mtriple>
+        <mtriple>Islamabad | areaCode | 051</mtriple>
+        <mtriple>Islamabad | demonym | Islamabadi</mtriple>
+      </modifiedtripleset>
+      <lex comment="" lid="id1" lang="ga">Some Irish text.</lex>
+    </entry>
+    <entry category="Cities" eid="4" shape="(X (X) (X) (X) (X))" shape-type="sibling" size="7">
+      <originaltripleset>
+        <otriple>Lagos | areaLand | 999600000.0</otriple>
+        <otriple>Lagos | areaMetro | 2706700000.0</otriple>
+        <otriple>Lagos | areaUrban | 907000000.0</otriple>
+        <otriple>Lagos | areaWater | 171680000.0</otriple>
+        <otriple>Lagos | populationMetro | 21320000</otriple>
+        <otriple>Lagos | populationMetroDensity | 7759.0</otriple>
+        <otriple>Lagos | areaTotal | 1171.28</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Lagos | areaLand | 999600000.0</mtriple>
+        <mtriple>Lagos | areaMetro | 2706700000.0</mtriple>
+        <mtriple>Lagos | areaUrban | 907000000.0</mtriple>
+        <mtriple>Lagos | areaWater | 171680000.0</mtriple>
+        <mtriple>Lagos | populationMetro | 21320000</mtriple>
+        <mtriple>Lagos | populationMetroDensity | 7759.0</mtriple>
+        <mtriple>Lagos | areaTotal | 1171.28</mtriple>
+      </modifiedtripleset>
+      <lex comment="" lid="id1" lang="ga">Some Irish text.</lex>
+    </entry>
+    <entry category="People" eid="5" shape="(X (X) (X) (X) (X))" shape-type="sibling" size="7">
+      <originaltripleset>
+        <otriple>Hugh_Gaitskell__Tenure__2 | deputy | Aneurin_Bevan</otriple>
+        <otriple>Alfred_Robens,_Baron_Robens_of_Woldingham__Tenure__2 | predecessor | Aneurin_Bevan</otriple>
+        <otriple>Hilary_Marquand__Tenure__1 | predecessor | Aneurin_Bevan</otriple>
+        <otriple>Jennie_Lee,_Baroness_Lee_of_Asheridge | spouse | Aneurin_Bevan</otriple>
+        <otriple>Jim_Griffiths__Tenure__2 | successor | Aneurin_Bevan</otriple>
+        <otriple>Henry_Willink__Tenure__1 | successor | Aneurin_Bevan</otriple>
+        <otriple>George_Isaacs__Tenure__2 | successor | Aneurin_Bevan</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Hugh_Gaitskell__Tenure__2 | deputy | Aneurin_Bevan</mtriple>
+        <mtriple>Alfred_Robens,_Baron_Robens_of_Woldingham__Tenure__2 | predecessor | Aneurin_Bevan</mtriple>
+        <mtriple>Hilary_Marquand__Tenure__1 | predecessor | Aneurin_Bevan</mtriple>
+        <mtriple>Jennie_Lee,_Baroness_Lee_of_Asheridge | spouse | Aneurin_Bevan</mtriple>
+        <mtriple>Jim_Griffiths__Tenure__2 | successor | Aneurin_Bevan</mtriple>
+        <mtriple>Henry_Willink__Tenure__1 | successor | Aneurin_Bevan</mtriple>
+        <mtriple>George_Isaacs__Tenure__2 | successor | Aneurin_Bevan</mtriple>
+      </modifiedtripleset>
+      <lex comment="" lid="id1" lang="ga">Some Irish text.</lex>
+    </entry>
+    <entry category="People" eid="6" shape="(X (X) (X) (X) (X))" shape-type="sibling" size="7">
+      <originaltripleset>
+        <otriple>Anthony_Giddens | birthPlace | London</otriple>
+        <otriple>Anthony_Giddens | birthDate | 1938-01-18</otriple>
+        <otriple>Anthony_Giddens | alias | Tony Giddens</otriple>
+        <otriple>Anthony_Giddens | birthName | Anthony Giddens</otriple>
+        <otriple>Anthony_Giddens | birthYear | 1938</otriple>
+        <otriple>Anthony_Giddens | party | Labour_Party_(UK)</otriple>
+        <otriple>The_Transformation_of_Intimacy | author | Anthony_Giddens</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Anthony_Giddens | birthPlace | London</mtriple>
+        <mtriple>Anthony_Giddens | birthDate | 1938-01-18</mtriple>
+        <mtriple>Anthony_Giddens | alias | Tony Giddens</mtriple>
+        <mtriple>Anthony_Giddens | birthName | Anthony Giddens</mtriple>
+        <mtriple>Anthony_Giddens | birthYear | 1938</mtriple>
+        <mtriple>Anthony_Giddens | party | Labour_Party_(UK)</mtriple>
+        <mtriple>The_Transformation_of_Intimacy | author | Anthony_Giddens</mtriple>
+      </modifiedtripleset>
+      <lex comment="" lid="id1" lang="ga">Some Irish text.</lex>
+    </entry>
+    <entry category="People" eid="7" shape="(X (X) (X) (X) (X))" shape-type="sibling" size="7">
+      <originaltripleset>
+        <otriple>Antoine_Lavoisier | birthPlace | Paris</otriple>
+        <otriple>Antoine_Lavoisier | deathPlace | French_First_Republic</otriple>
+        <otriple>Antoine_Lavoisier | deathDate | 1794-05-08</otriple>
+        <otriple>Antoine_Lavoisier | birthDate | 1743-08-26</otriple>
+        <otriple>Antoine_Lavoisier | deathCause | Guillotine</otriple>
+        <otriple>Antoine_Lavoisier | academicDiscipline | Chemist</otriple>
+        <otriple>Antoine_Lavoisier | almaMater | University_of_Paris</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Antoine_Lavoisier | birthPlace | Paris</mtriple>
+        <mtriple>Antoine_Lavoisier | deathPlace | French_First_Republic</mtriple>
+        <mtriple>Antoine_Lavoisier | deathDate | 1794-05-08</mtriple>
+        <mtriple>Antoine_Lavoisier | birthDate | 1743-08-26</mtriple>
+        <mtriple>Antoine_Lavoisier | deathCause | Guillotine</mtriple>
+        <mtriple>Antoine_Lavoisier | academicDiscipline | Chemist</mtriple>
+        <mtriple>Antoine_Lavoisier | almaMater | University_of_Paris</mtriple>
+      </modifiedtripleset>
+      <lex comment="" lid="id1" lang="ga">Some Irish text.</lex>
+    </entry>
+    <entry category="People" eid="8" shape="(X (X) (X) (X) (X))" shape-type="sibling" size="7">
+      <originaltripleset>
+        <otriple>Antonio_Negri | birthPlace | Padua</otriple>
+        <otriple>Antonio_Negri | birthDate | 1933-08-01</otriple>
+        <otriple>Antonio_Negri | birthYear | 1933</otriple>
+        <otriple>Antonio_Negri | influencedBy | Galvano_Della_Volpe</otriple>
+        <otriple>Antonio_Negri | influencedBy | Karl_Marx</otriple>
+        <otriple>Antonio_Negri | region | Western_philosophy</otriple>
+        <otriple>Multitude:_War_and_Democracy_in_the_Age_of_Empire | author | Antonio_Negri</otriple>
+      </originaltripleset>
+      <modifiedtripleset>
+        <mtriple>Antonio_Negri | birthPlace | Padua</mtriple>
+        <mtriple>Antonio_Negri | birthDate | 1933-08-01</mtriple>
+        <mtriple>Antonio_Negri | birthYear | 1933</mtriple>
+        <mtriple>Antonio_Negri | influencedBy | Galvano_Della_Volpe</mtriple>
+        <mtriple>Antonio_Negri | influencedBy | Karl_Marx</mtriple>
+        <mtriple>Antonio_Negri | region | Western_philosophy</mtriple>
+        <mtriple>Multitude:_War_and_Democracy_in_the_Age_of_Empire | author | Antonio_Negri</mtriple>
+      </modifiedtripleset>
+      <lex comment="" lid="id1" lang="ga">Some Irish text.</lex>
+    </entry>
+  </entries>
+</benchmark>
