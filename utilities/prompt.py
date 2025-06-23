@@ -95,3 +95,24 @@ Here are the subject-predicate-object triples to convert:
 
 Transform this structured data into coherent, flowing prose that naturally integrates all the factual information. Ensure every fact from the triples is represented in your text while maintaining readability and logical flow.
 """
+
+TRANSLATION_PROMPT = """
+You are a professional translator specializing in fluent, accurate, and natural translations from English to Irish (Gaeilge).
+
+*** Your Task ***
+Translate the following English text into high-quality Irish. The translation must:
+- Preserve all factual content without omissions or hallucinations.
+- Be grammatically correct and stylistically natural in Irish.
+- Avoid literal translations that sound unnatural.
+- Avoid adding explanations or introductory statements.
+- Be appropriate for publication in a formal context, such as a Wikipedia article or government report.
+
+*** Input ***
+"{english_text}"
+
+*** Output ***
+Please return only the translated Irish version of the text.
+"""
+
+TRANS_INPUT = """Translate the following English text into Irish (Gaeilge):
+"{english_text}"""
