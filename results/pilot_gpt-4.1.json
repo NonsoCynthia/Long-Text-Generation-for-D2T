@@ -1,0 +1,338 @@
+[
+  {
+    "index": 0,
+    "triples": [
+      [
+        "Abu_Dhabi",
+        "areaTotal",
+        "972.0"
+      ],
+      [
+        "Abu_Dhabi",
+        "elevation",
+        "27.0"
+      ],
+      [
+        "Abu_Dhabi",
+        "populationTotal",
+        "1512000"
+      ],
+      [
+        "Abu_Dhabi",
+        "utcOffset",
+        "+4"
+      ],
+      [
+        "Abu_Dhabi",
+        "country",
+        "United_Arab_Emirates"
+      ],
+      [
+        "Abu_Dhabi",
+        "governmentType",
+        "Municipality"
+      ],
+      [
+        "Abu_Dhabi",
+        "timeZone",
+        "Time_in_the_United_Arab_Emirates"
+      ]
+    ],
+    "output": "Abu Dhabi is a prominent city located in the United Arab Emirates. Spanning a total area of 972.0 square kilometers, the city sits at an elevation of 27.0 meters above sea level. According to the latest available data, Abu Dhabi has a population of 1,512,000 residents. The city operates under a municipality form of government.\n\nAbu Dhabi observes the time zone defined as Time in the United Arab Emirates, with a standard Coordinated Universal Time (UTC) offset of +4 hours.",
+    "translation": "Is cathair mh\u00f3r \u00ed Abu Dhabi at\u00e1 suite sna hAontas Aontaithe Arabacha. T\u00e1 s\u00ed ag leathadh thar limist\u00e9ar ioml\u00e1n de 972.0 cilim\u00e9adar cearnach, agus \u00ed suite ag airde 27.0 m\u00e9adar os cionn leibh\u00e9al na farraige. De r\u00e9ir na sonra\u00ed is d\u00e9ana\u00ed at\u00e1 ar f\u00e1il, t\u00e1 daonra de 1,512,000 duine ag Abu Dhabi. T\u00e1 c\u00f3ras rialtais na cathrach bunaithe ar bhardasacht.\n\nLeanann Abu Dhabi an crios ama at\u00e1 sainmh\u00ednithe mar Am sna hAontas Aontaithe Arabacha, le haistri\u00fa caighde\u00e1nach UTC de +4 huaire."
+  },
+  {
+    "index": 1,
+    "triples": [
+      [
+        "Accra",
+        "areaMetro",
+        "3245000000.0"
+      ],
+      [
+        "Accra",
+        "areaUrban",
+        "199400000.0"
+      ],
+      [
+        "Accra",
+        "populationMetro",
+        "5455692"
+      ],
+      [
+        "Accra",
+        "areaTotal",
+        "20.4"
+      ],
+      [
+        "Accra",
+        "areaCode",
+        "030"
+      ],
+      [
+        "Accra",
+        "demonym",
+        "Accran"
+      ],
+      [
+        "Accra",
+        "elevation",
+        "60.96"
+      ]
+    ],
+    "output": "Accra is a city characterized by a variety of geographic and demographic features. Situated at an elevation of 60.96 meters, it encompasses a total area of 20.4 square kilometers. The larger urban expanse of Accra covers an area of 199.4 million square meters, while the metropolitan area is significantly more extensive, reaching approximately 3.245 billion square meters.\n\nThe city serves as a home to a vibrant population, with 5,455,692 people residing within its metropolitan region. Residents of Accra are referred to as Accrans, reflecting the city's distinct local identity. For telecommunications, the designated area code for Accra is 030, facilitating seamless connectivity for people within the region.",
+    "translation": "Is cathair \u00ed Accra a bhfuil \u00e9ags\u00falacht shaibhir ag baint l\u00e9i \u00f3 thaobh gn\u00e9ithe geografacha agus daonra de. Suite ar airde de 60.96 m\u00e9adar, t\u00e1 limist\u00e9ar forioml\u00e1n de 20.4 cilim\u00e9adar cearnach inti. Cl\u00fada\u00edonn an limist\u00e9ar uirbeach n\u00edos leithne de chuid Accra achar de 199.4 milli\u00fan m\u00e9adar cearnach, agus t\u00e1 an t-iarcheantar meitreo n\u00edos fairsinge f\u00f3s, ag sroicheadh thart ar 3.245 billi\u00fan m\u00e9adar cearnach.\n\nIs baile \u00e9 an chathair ag pobal br\u00edomhar, agus t\u00e1 5,455,692 duine ina gc\u00f3na\u00ed laistigh d\u00e1 r\u00e9igi\u00fan meitreo. Tugtar Accraigh ar mhuintir na cathrach, rud a l\u00e9ir\u00edonn f\u00e9ini\u00falacht shaini\u00fail na h\u00e1ite. Maidir le teileachumars\u00e1id, is \u00e9 030 an c\u00f3d limist\u00e9ir at\u00e1 ceaptha d\u2019Accra, rud a \u00e9asca\u00edonn nascacht gan str\u00f3 do dhaoine sa r\u00e9igi\u00fan."
+  },
+  {
+    "index": 2,
+    "triples": [
+      [
+        "Islamabad",
+        "areaMetro",
+        "1165500000.0"
+      ],
+      [
+        "Islamabad",
+        "areaUrban",
+        "220150000.0"
+      ],
+      [
+        "Islamabad",
+        "populationMetro",
+        "2003368"
+      ],
+      [
+        "Islamabad",
+        "areaTotal",
+        "220.0"
+      ],
+      [
+        "Islamabad",
+        "populationDensity",
+        "2089.0"
+      ],
+      [
+        "Islamabad",
+        "areaCode",
+        "051"
+      ],
+      [
+        "Islamabad",
+        "demonym",
+        "Islamabadi"
+      ]
+    ],
+    "output": "Islamabad, whose residents are known as Islamabadis, is characterized by a variety of geographical and demographic features. The city itself spans a total area of 220.0 square kilometers and has an urban area covering 220,150,000.0 square meters. The broader metropolitan region is much more expansive, with a metro area measuring 1,165,500,000.0 square meters. \n\nAs of the latest statistics, Islamabad's metropolitan population stands at 2,003,368, resulting in a population density of 2,089.0 people per square kilometer. For telecommunications, the city utilizes the area code 051.",
+    "translation": "T\u00e1 \u00e9ags\u00falacht raonghn\u00e9itheach ag baint le gn\u00e9ithe t\u00edreola\u00edocha agus daonra Islamabad, arb \u00e9 Islamabadis a thugtar ar a c\u00f3naitheoir\u00ed. T\u00e1 achar ioml\u00e1n 220.0 cilim\u00e9adar cearnach ag an gcathair f\u00e9in, agus cl\u00fada\u00edonn an limist\u00e9ar uirbeach 220,150,000.0 m\u00e9adar cearnach. T\u00e1 an r\u00e9igi\u00fan m\u00f3rcheantair i bhfad n\u00edos fairsinge, le limist\u00e9ar metro a sh\u00edneann thar 1,165,500,000.0 m\u00e9adar cearnach.\n\nDe r\u00e9ir na staitistic\u00ed is d\u00e9ana\u00ed, t\u00e1 daonra metropolrach 2,003,368 ag Islamabad, a chuireann dl\u00fas daonra de 2,089.0 duine in aghaidh an chilim\u00e9adair chearnaigh ar f\u00e1il. Maidir le teileachumars\u00e1id, baineann an chathair \u00fas\u00e1id as an gc\u00f3d limist\u00e9ir 051."
+  },
+  {
+    "index": 3,
+    "triples": [
+      [
+        "Lagos",
+        "areaLand",
+        "999600000.0"
+      ],
+      [
+        "Lagos",
+        "areaMetro",
+        "2706700000.0"
+      ],
+      [
+        "Lagos",
+        "areaUrban",
+        "907000000.0"
+      ],
+      [
+        "Lagos",
+        "areaWater",
+        "171680000.0"
+      ],
+      [
+        "Lagos",
+        "populationMetro",
+        "21320000"
+      ],
+      [
+        "Lagos",
+        "populationMetroDensity",
+        "7759.0"
+      ],
+      [
+        "Lagos",
+        "areaTotal",
+        "1171.28"
+      ]
+    ],
+    "output": "Lagos is a city characterized by its vast expanse and significant population density. The total area of Lagos measures 1,171.28 square kilometers, with the land area accounting for 999.6 square kilometers. Additionally, its urban area covers 907 square kilometers, illustrating the city's considerable urban footprint. Water bodies form an important part of Lagos's geography as well, covering an area of 171.68 square kilometers.\n\nThe metropolitan region of Lagos is even more extensive, spanning approximately 2,706.7 square kilometers. This considerable metro area is home to a population of about 21,320,000 people, resulting in a metro population density of 7,759 individuals per square kilometer. These figures highlight Lagos not only as a geographically expansive city but also as one of remarkable human concentration.",
+    "translation": "Is cathair \u00ed Lagos a bhfuil fairsinge ollmh\u00f3r agus dl\u00fas suntasach daonra aici. T\u00e1 achar ioml\u00e1n Lagos comhdh\u00e9anta de 1,171.28 cilim\u00e9adar cearnach, agus t\u00e1 999.6 cilim\u00e9adar cearnach den achar sin mar thalamh. Ina theannta sin, cl\u00fada\u00edonn an limist\u00e9ar uirbeach 907 cilim\u00e9adar cearnach, rud a l\u00e9ir\u00edonn lorg m\u00f3r uirbeach na cathrach. T\u00e1 r\u00f3l t\u00e1bhachtach ag comhlachta\u00ed uisce i ngeografa\u00edocht Lagos freisin, agus iad ag cl\u00fadach achar de 171.68 cilim\u00e9adar cearnach.\n\nT\u00e1 r\u00e9igi\u00fan meitreo Lagos n\u00edos leithne f\u00f3s, lena achar timpeall 2,706.7 cilim\u00e9adar cearnach. T\u00e1 thart ar 21,320,000 duine ina gc\u00f3na\u00ed sa limist\u00e9ar meitreo ollmh\u00f3r seo, rud a fh\u00e1gann dl\u00fas daonra de 7,759 duine sa chilim\u00e9adar cearnach. L\u00e9ir\u00edonn na sonra\u00ed seo Lagos mar chathair at\u00e1 fairsing go geografach agus ina theannta sin, ceann de na h\u00e1iteanna is dl\u00faithe \u00f3 thaobh daonra de ar domhan."
+  },
+  {
+    "index": 4,
+    "triples": [
+      [
+        "Hugh_Gaitskell__Tenure__2",
+        "deputy",
+        "Aneurin_Bevan"
+      ],
+      [
+        "Alfred_Robens,_Baron_Robens_of_Woldingham__Tenure__2",
+        "predecessor",
+        "Aneurin_Bevan"
+      ],
+      [
+        "Hilary_Marquand__Tenure__1",
+        "predecessor",
+        "Aneurin_Bevan"
+      ],
+      [
+        "Jennie_Lee,_Baroness_Lee_of_Asheridge",
+        "spouse",
+        "Aneurin_Bevan"
+      ],
+      [
+        "Jim_Griffiths__Tenure__2",
+        "successor",
+        "Aneurin_Bevan"
+      ],
+      [
+        "Henry_Willink__Tenure__1",
+        "successor",
+        "Aneurin_Bevan"
+      ],
+      [
+        "George_Isaacs__Tenure__2",
+        "successor",
+        "Aneurin_Bevan"
+      ]
+    ],
+    "output": "Aneurin Bevan was a prominent figure whose career was marked by significant roles and close associations with various key personalities. During his tenure, he served as deputy to Hugh Gaitskell, reflecting his importance within his political sphere. His professional journey was characterized by both succession and precedence; he was succeeded by figures such as Jim Griffiths, Henry Willink, and George Isaacs, each of whom took over duties following his leadership. Conversely, Bevan himself succeeded Alfred Robens, Baron Robens of Woldingham, as well as Hilary Marquand, highlighting a continual presence in positions of responsibility.\n\nBeyond his professional achievements, Bevan\u2019s personal life was closely linked to Jennie Lee, Baroness Lee of Asheridge, to whom he was married. Their relationship was significant, bridging both personal and political realms during a period of dynamic change and influence.",
+    "translation": "Ba dhuine m\u00f3r le r\u00e1 \u00e9 Aneurin Bevan a raibh a shaol gairmi\u00fail marc\u00e1ilte ag r\u00f3il th\u00e1bhachtacha agus caidreamh dl\u00fath le pearsana l\u00e1rnacha \u00e9ags\u00fala. Le linn a thr\u00e9imhse i mbun oibre, d\u2019oibrigh s\u00e9 mar leas-ch\u00e9ile do Hugh Gaitskell, rud a l\u00e9irigh a th\u00e1bhacht laistigh d\u00e1 r\u00e9imse polaiti\u00fail. Bh\u00ed ard\u00fa c\u00e9ime agus tosa\u00edocht le feice\u00e1il ar a thr\u00e1chtas gairmi\u00fail; th\u00e1inig daoine ar n\u00f3s Jim Griffiths, Henry Willink agus George Isaacs ina dhiaidh, agus ghlac siad le freagrachta\u00ed tar \u00e9is a cheannaireachta. Os a choinne sin, th\u00e1inig Bevan f\u00e9in i gcomharbacht ar Alfred Robens, Bar\u00fan Robens de Woldingham, chomh maith le Hilary Marquand, rud a chinntigh a l\u00e1ithreacht lean\u00fanach i bpoist fhreagracha.\n\nLasmuigh d\u00e1 chuid \u00e9achta\u00ed gairmi\u00fala, bh\u00ed saol pearsanta Bhevan go dl\u00fath nasctha le Jennie Lee, Bar\u00fanacht Lee de Asheridge, a bhean ch\u00e9ile. Bh\u00ed t\u00e1bhacht ar leith ag a gcaidreamh, ag d\u00e9anamh nasc idir r\u00e9ims\u00ed pearsanta agus polaiti\u00fala le linn tr\u00e9imhse d\u2019athruithe dinimici\u00fala agus tionchair."
+  },
+  {
+    "index": 5,
+    "triples": [
+      [
+        "Anthony_Giddens",
+        "birthPlace",
+        "London"
+      ],
+      [
+        "Anthony_Giddens",
+        "birthDate",
+        "1938-01-18"
+      ],
+      [
+        "Anthony_Giddens",
+        "alias",
+        "Tony Giddens"
+      ],
+      [
+        "Anthony_Giddens",
+        "birthName",
+        "Anthony Giddens"
+      ],
+      [
+        "Anthony_Giddens",
+        "birthYear",
+        "1938"
+      ],
+      [
+        "Anthony_Giddens",
+        "party",
+        "Labour_Party_(UK)"
+      ],
+      [
+        "The_Transformation_of_Intimacy",
+        "author",
+        "Anthony_Giddens"
+      ]
+    ],
+    "output": "Anthony Giddens, also known as Tony Giddens, was born in London on January 18, 1938. His birth name is Anthony Giddens, and he is affiliated with the Labour Party in the United Kingdom. Recognized for his contributions to sociology, Giddens authored the work \"The Transformation of Intimacy.\"",
+    "translation": "Rugadh Anthony Giddens, ar a dtugtar Tony Giddens freisin, i Londain ar an 18 Ean\u00e1ir 1938. Is \u00e9 Anthony Giddens a ainm breithe, agus t\u00e1 s\u00e9 bainteach leis an gComhghuaill\u00edocht Oibreachais sa R\u00edocht Aontaithe. Aithn\u00edtear \u00e9 as a chuid oibre sa tsocheola\u00edocht, agus is \u00e9 \u00fadar an tsaothair \"The Transformation of Intimacy\" \u00e9."
+  },
+  {
+    "index": 6,
+    "triples": [
+      [
+        "Antoine_Lavoisier",
+        "birthPlace",
+        "Paris"
+      ],
+      [
+        "Antoine_Lavoisier",
+        "deathPlace",
+        "French_First_Republic"
+      ],
+      [
+        "Antoine_Lavoisier",
+        "deathDate",
+        "1794-05-08"
+      ],
+      [
+        "Antoine_Lavoisier",
+        "birthDate",
+        "1743-08-26"
+      ],
+      [
+        "Antoine_Lavoisier",
+        "deathCause",
+        "Guillotine"
+      ],
+      [
+        "Antoine_Lavoisier",
+        "academicDiscipline",
+        "Chemist"
+      ],
+      [
+        "Antoine_Lavoisier",
+        "almaMater",
+        "University_of_Paris"
+      ]
+    ],
+    "output": "Antoine Lavoisier was born on August 26, 1743, in Paris. He pursued higher education at the University of Paris, where he developed his knowledge and passion in the field of chemistry, which ultimately became his academic discipline. Lavoisier went on to gain recognition as a prominent chemist.\n\nHis life came to a tragic end during the tumultuous period of the French First Republic. On May 8, 1794, Lavoisier died by guillotine, marking a significant loss to both France and the scientific community.",
+    "translation": "Rugadh Antoine Lavoisier ar an 26 L\u00fanasa 1743 i bP\u00e1ras. Lean s\u00e9 ar aghaidh lena chuid oideachais iarch\u00e9ime in Ollscoil Ph\u00e1ras, \u00e1it ar fhorbair s\u00e9 a chuid eolais agus a phaisean sa cheimic, discipl\u00edn acad\u00fail a th\u00e1inig chun bheith mar phr\u00edomhr\u00e9imse staid\u00e9ir aige. D'\u00e9irigh le Lavoisier aitheantas a bhaint amach mar cheimiceoir m\u00f3r le r\u00e1.\n\nTh\u00e1inig deireadh trag\u00f3ideach lena shaol i rith thr\u00e9imhse chorraitheach Ch\u00e9ad Phoblacht na Fraince. Ar an 8 Bealtaine 1794, cailleadh Lavoisier ar an nguillt\u00edn, rud a bh\u00ed ina chaillteanas suntasach do chuid na Fraince agus don phobal eola\u00edoch."
+  },
+  {
+    "index": 7,
+    "triples": [
+      [
+        "Antonio_Negri",
+        "birthPlace",
+        "Padua"
+      ],
+      [
+        "Antonio_Negri",
+        "birthDate",
+        "1933-08-01"
+      ],
+      [
+        "Antonio_Negri",
+        "birthYear",
+        "1933"
+      ],
+      [
+        "Antonio_Negri",
+        "influencedBy",
+        "Galvano_Della_Volpe"
+      ],
+      [
+        "Antonio_Negri",
+        "influencedBy",
+        "Karl_Marx"
+      ],
+      [
+        "Antonio_Negri",
+        "region",
+        "Western_philosophy"
+      ],
+      [
+        "Multitude:_War_and_Democracy_in_the_Age_of_Empire",
+        "author",
+        "Antonio_Negri"
+      ]
+    ],
+    "output": "Antonio Negri, born on August 1, 1933, in Padua, is a prominent figure in Western philosophy. His intellectual development was shaped by the influence of thinkers such as Galvano Della Volpe and Karl Marx, whose ideas played a significant role in his work. Negri is also known as the author of \"Multitude: War and Democracy in the Age of Empire,\" further cementing his contribution to contemporary philosophical discourse.",
+    "translation": "Rugadh Antonio Negri ar an 1 L\u00fanasa 1933 i Padova, agus is pearsa th\u00e1bhachtach \u00e9 i bhfeals\u00fanacht an Iarthair. Chuir smaointeoir\u00ed ar n\u00f3s Galvano Della Volpe agus Karl Marx go m\u00f3r lena fhorbairt intleacht\u00fail, agus bh\u00ed tionchar suntasach ag a gcuid smaointe ar a shaothar f\u00e9in. T\u00e1 Negri c\u00e1ili\u00fail freisin mar \u00fadar \"Multitude: War and Democracy in the Age of Empire,\" rud a dhaingn\u00edonn tuilleadh a chuid rann\u00edoca\u00edochta le diosc\u00farsa na feals\u00fanachta comhaimseartha."
+  }
+]
