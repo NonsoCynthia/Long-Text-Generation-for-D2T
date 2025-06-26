@@ -78,11 +78,18 @@ def main():
                 flat   = " , ".join(" | ".join(t) for t in triples)
                 prompt = INPUT_PROMPT.format(triples=flat)
                 
-                # output = llm.invoke(prompt).strip()
-                output = llm.invoke({"input": prompt}).strip()             
-                # output = run_llm(llm, prompt).strip()
-                if "</think>" in output:
-                    output = output.split("<think>")[1].strip()
+                output_text = llm.invoke({"input": prompt}).strip()
+
+                # If model wraps the response in <think>...</think>, extract inside
+                if "</think>" in output_text:
+                    output_text = output_text.split("<think>")[1].strip()
+
+                # Optional: trim off any echoed marker like [GENERATED TEXT]
+                if "[GENERATED TEXT]" in output_text:
+                    output_text = output_text.split("[GENERATED TEXT]")[1].split("\n\n\n")[0].strip()
+
+                # Assign final output
+                output = output_text
                 rate_limiter()
             except Exception as e:
                 print(f"Failed at index {i}: {e}")

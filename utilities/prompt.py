@@ -36,6 +36,7 @@ Generate well-written paragraph(s) that convey all facts encoded in the triples 
 - Adding information not present in the triples
 - Creating one sentence per triple (mechanical approach)
 - Using structured formats (XML, JSON, lists) instead of prose
+- Generate only one prose using the data. Multiple prose is not allowed.
 
 *** Output Requirements ***
 Return only the final generated text as continuous, fluent paragraph(s). Use multiple paragraphs when it improves organization and readability.
@@ -48,7 +49,7 @@ Here are the subject-predicate-object triples to convert:
 {triples}
 
 Transform this structured data into coherent, flowing prose that naturally integrates all the factual information. Ensure every fact from the triples is represented in your text while maintaining readability and logical flow.
-[TEXT]"""
+[GENERATED TEXT]"""
 
 
 TRANSLATION_PROMPT = """
@@ -104,5 +105,5 @@ Triples:
 Rugadh Dubhghlas de hÍde i gCaisleán Riabhach sa bhliain 1860. Bhí sé ina chéad Uachtarán ar Éirinn.
 
 Begin generating the Irish text now based on the input triples.
-[TEXT]
+[GENERATED TEXT]
 """
