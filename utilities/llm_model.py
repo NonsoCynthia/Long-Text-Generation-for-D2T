@@ -2,6 +2,7 @@ import os, getpass
 from dotenv import load_dotenv, find_dotenv
 from typing import Dict, Optional, Text, Union
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 _ = load_dotenv(find_dotenv())  # Load environment variables
 
@@ -116,6 +117,7 @@ class HFModel(ModelBase):
         # --- heavy imports are lazy here -----------------------------------
         from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
         from peft import PeftModel
+        from langchain_huggingface import HuggingFacePipeline
 
         try:
             from bitsandbytes import BitsAndBytesConfig
@@ -123,11 +125,14 @@ class HFModel(ModelBase):
         except ImportError:
             _BNB = False
 
+        self.chatlike = False   # ← NEW: to control prompt behavior
+
         # -------------------------------------------------------------------
         # ➊  Local LoRA adapter directory
         # -------------------------------------------------------------------
-        if Path(model_name).exists():
-            adapter_dir = Path(model_name)
+        local_path = Path(os.path.join("/home/cosuji/spinning-storage/cosuji/NLG_Exp/Long-Text-Generation-for-D2T/finetune", model_name)).expanduser().resolve()
+        if local_path.is_dir():
+            adapter_dir = local_path
 
             # tokenizer ships with the adapter
             tokenizer = AutoTokenizer.from_pretrained(adapter_dir, use_fast=False)
@@ -183,7 +188,9 @@ class HFModel(ModelBase):
             if max_new_tokens is not None:
                 pipe_kwargs["max_new_tokens"] = max_new_tokens
 
-            self.llm = pipeline("text-generation", **pipe_kwargs)
+            pipe = pipeline("text-generation", **pipe_kwargs)
+            self.llm = HuggingFacePipeline(pipeline=pipe)
+            # self.llm = pipeline("text-generation", **pipe_kwargs)
 
         # -------------------------------------------------------------------
         # ➋  Plain HF Hub model
@@ -192,16 +199,24 @@ class HFModel(ModelBase):
             from langchain_huggingface import ChatHuggingFace
             hf_token = os.getenv("HF_TOKEN") or api_key
             self.llm = ChatHuggingFace(
-                model=model_name,
-                temperature=temperature,
-                huggingfacehub_api_token=hf_token,
-            )
+                                llm=model_name,
+                                temperature=temperature,
+                                huggingfacehub_api_token=hf_token
+                            )
 
-    # --- Base-class hooks ---------------------------------------------------
-    def model_(self, agent_prompts: Optional[Text]) -> Dict:
-        prompt = ChatPromptTemplate.from_messages(
-            [("system", agent_prompts), ("human", "{input}")]
-        )
+            self.chatlike = True   # ← will need ChatPromptTemplate
+
+    def model_(self, agent_prompts: Optional[Text]):
+        if self.chatlike:
+            prompt = ChatPromptTemplate.from_messages([
+                ("system", agent_prompts),
+                ("human", "{input}")
+            ])
+        else:
+            prompt = PromptTemplate(
+                input_variables=["input"],
+                template=f"{agent_prompts}\n\n{{input}}"
+            )
         return prompt | self.llm
 
     def raw_model(self):
@@ -236,7 +251,7 @@ class UnifiedModel:
             self.model = GroqModel(**kwargs)
 
         elif provider in ["hf", "huggingface"]:
-            kwargs.setdefault("hf_token", os.getenv("HF_TOKEN"))
+            # kwargs.setdefault("hf_token", os.getenv("HF_TOKEN"))
             self.model = HFModel(**kwargs)
 
         elif provider == "aixplain":

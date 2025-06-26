@@ -48,7 +48,7 @@ Here are the subject-predicate-object triples to convert:
 {triples}
 
 Transform this structured data into coherent, flowing prose that naturally integrates all the factual information. Ensure every fact from the triples is represented in your text while maintaining readability and logical flow.
-"""
+[TEXT]"""
 
 
 TRANSLATION_PROMPT = """
@@ -104,4 +104,5 @@ Triples:
 Rugadh Dubhghlas de hÍde i gCaisleán Riabhach sa bhliain 1860. Bhí sé ina chéad Uachtarán ar Éirinn.
 
 Begin generating the Irish text now based on the input triples.
+[TEXT]
 """
