@@ -101,23 +101,112 @@ class AiXplainModel(ModelBase):
 
 # === HuggingFace Model ===
 class HFModel(ModelBase):
-    def __init__(self, model_name: str = "HuggingFaceH4/zephyr-7b-beta", temperature: float = 1.0, api_key: Optional[str] = None):
-        from langchain_huggingface import ChatHuggingFace
-        hf_token = os.getenv("HF_TOKEN") or api_key
-        self.llm = ChatHuggingFace(
-            model=model_name,
-            temperature=temperature,
-            huggingfacehub_api_token=hf_token
-        )
+    def __init__(
+        self,
+        model_name: str = "../finetune/llama_en_lora",
+        temperature: float = 0.0,
+        max_new_tokens: Optional[int] = 1024,   # None → no length cap
+        quant: str = "8bit",                    # 8bit | 4bit | none
+        api_key: Optional[str] = None,
+    ):
+        from pathlib import Path
+        import warnings
+        import os
 
+        # --- heavy imports are lazy here -----------------------------------
+        from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
+        from peft import PeftModel
+
+        try:
+            from bitsandbytes import BitsAndBytesConfig
+            _BNB = True
+        except ImportError:
+            _BNB = False
+
+        # -------------------------------------------------------------------
+        # ➊  Local LoRA adapter directory
+        # -------------------------------------------------------------------
+        if Path(model_name).exists():
+            adapter_dir = Path(model_name)
+
+            # tokenizer ships with the adapter
+            tokenizer = AutoTokenizer.from_pretrained(adapter_dir, use_fast=False)
+
+            # detect backbone from adapter_config.json
+            base_id = "meta-llama/Llama-2-13b-chat-hf"        # fallback
+            cfg_file = adapter_dir / "adapter_config.json"
+            if cfg_file.exists():
+                import json, io
+                with io.open(cfg_file, "r", encoding="utf-8") as fh:
+                    base_id = json.load(fh)["base_model_name_or_path"]
+
+            # choose precision
+            quant = quant.lower()
+            if quant == "none" or not _BNB:
+                backbone = AutoModelForCausalLM.from_pretrained(
+                    base_id, torch_dtype="auto", device_map="auto"
+                )
+            else:
+                try:
+                    if quant == "8bit":
+                        qcfg = BitsAndBytesConfig(load_in_8bit=True)
+                    elif quant == "4bit":
+                        qcfg = BitsAndBytesConfig(
+                            load_in_4bit=True,
+                            bnb_4bit_use_double_quant=True,
+                            bnb_4bit_quant_type="nf4",
+                            bnb_4bit_compute_dtype=torch.float16,
+                        )
+                    else:
+                        raise ValueError("--quant must be 8bit | 4bit | none")
+                    backbone = AutoModelForCausalLM.from_pretrained(
+                        base_id, quantization_config=qcfg, device_map="auto"
+                    )
+                except RuntimeError as err:
+                    warnings.warn(
+                        f"bitsandbytes backend unavailable ({err}); falling back to fp16"
+                    )
+                    backbone = AutoModelForCausalLM.from_pretrained(
+                        base_id, torch_dtype="auto", device_map="auto"
+                    )
+
+            model = PeftModel.from_pretrained(backbone, adapter_dir)
+
+            # kwargs let us omit max_new_tokens when you want “unlimited”
+            pipe_kwargs = dict(
+                model=model,
+                tokenizer=tokenizer,
+                temperature=temperature,
+                top_p=0.9,
+                do_sample=True,
+            )
+            if max_new_tokens is not None:
+                pipe_kwargs["max_new_tokens"] = max_new_tokens
+
+            self.llm = pipeline("text-generation", **pipe_kwargs)
+
+        # -------------------------------------------------------------------
+        # ➋  Plain HF Hub model
+        # -------------------------------------------------------------------
+        else:
+            from langchain_huggingface import ChatHuggingFace
+            hf_token = os.getenv("HF_TOKEN") or api_key
+            self.llm = ChatHuggingFace(
+                model=model_name,
+                temperature=temperature,
+                huggingfacehub_api_token=hf_token,
+            )
+
+    # --- Base-class hooks ---------------------------------------------------
     def model_(self, agent_prompts: Optional[Text]) -> Dict:
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", agent_prompts), ("human", "{input}")
-        ])
+        prompt = ChatPromptTemplate.from_messages(
+            [("system", agent_prompts), ("human", "{input}")]
+        )
         return prompt | self.llm
 
     def raw_model(self):
         return self.llm
+
 
 
 # === Unified Factory ===
@@ -169,6 +258,6 @@ model_name = {
     "openai": {"model_name": "gpt-4.1", "temperature": 1.0},
     "anthropic": {"model_name": "claude-3-haiku-latest", "temperature": 1.0},
     "groq": {"model_name": "deepseek-r1-distill-llama-70b", "temperature": 1.0},
-    "hf": {"model_name": "HuggingFaceH4/zephyr-7b-beta", "temperature": 1.0},
+    "hf": {"model_name": "../finetune/llama_en_lora", "max_new_tokens": None, "quant": "8bit", "temperature": 1.0},
     "aixplain": {"model_id": "640b517694bf816d35a59125", "temperature": 1.0},
 }#.get(provider.lower())

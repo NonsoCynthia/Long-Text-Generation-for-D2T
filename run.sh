@@ -1,21 +1,28 @@
 #!/bin/bash
 
+#SBATCH --gres=gpu:a100:1
+# SBATCH --nodelist=g129
+#SBATCH -p compute
+#SBATCH -J GEN
+#SBATCH -t 1-23:59:59
+
 # Activate Conda environment
 # For macOS (commented out):
 # source /Users/chinonsoosuji/opt/anaconda3/etc/profile.d/conda.sh
 
 # For Ubuntu/Linux:
 source /home/chinonso/anaconda3/etc/profile.d/conda.sh
-conda activate lang2
+# conda activate lang2
+conda activate hf311
 
 # Configuration
 pilot="data/pilot.xml"
 dev="data/dev.xml"
 test="data/test.xml"
 XML_PATH="$pilot"  # Change this to $pilot, $dev, or $test
-SUPPLIER="anthropic"
-MODEL="claude-3-5-haiku-latest"
-TASK_TYPE="irish_generation"  # "generation", "irish_generation", or "translation"
+SUPPLIER="hf"
+MODEL="../finetune/llama_en_lora"
+TASK_TYPE="generation"  # "generation", "irish_generation", or "translation"
 
 # Automatically infer dataset name
 DATASET_NAME=$(basename "$XML_PATH" .xml)
