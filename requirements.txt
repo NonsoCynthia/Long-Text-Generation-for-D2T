@@ -1,0 +1,13 @@
+python-dotenv
+pandas
+langchain
+langchain_core
+langchain-community
+langchain-experimental
+langchain-ollama
+langchain-openai
+langchain_groq
+langchain_anthropic
+langchain_huggingface
+langgraph
+langchainhub

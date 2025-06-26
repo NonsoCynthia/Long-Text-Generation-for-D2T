@@ -11,8 +11,11 @@
 # source /Users/chinonsoosuji/opt/anaconda3/etc/profile.d/conda.sh
 
 # For Ubuntu/Linux:
-source /home/chinonso/anaconda3/etc/profile.d/conda.sh
+# source /home/chinonso/anaconda3/etc/profile.d/conda.sh
 # conda activate lang2
+
+# For ADAPT Cluster
+source /home/cosuji/anaconda3/etc/profile.d/conda.sh
 conda activate hf311
 
 # Configuration
@@ -21,7 +24,7 @@ dev="data/dev.xml"
 test="data/test.xml"
 XML_PATH="$pilot"  # Change this to $pilot, $dev, or $test
 SUPPLIER="hf"
-MODEL="../finetune/llama_en_lora"
+MODEL="llama_en_lora"
 TASK_TYPE="generation"  # "generation", "irish_generation", or "translation"
 
 # Automatically infer dataset name

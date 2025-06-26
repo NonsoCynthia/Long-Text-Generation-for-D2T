@@ -26,6 +26,10 @@ def parse_args():
     parser.add_argument("--translate_input", required=False, help="Path to file for translation input (.json)")
     return parser.parse_args()
 
+def run_llm(chain, text):
+    msg = chain.invoke({"input": text})
+    return msg.content if hasattr(msg, "content") else str(msg)
+
 def main():
     args = parse_args()
 
@@ -68,7 +72,12 @@ def main():
             print(f"[{task_type.upper()}] Entry {i+1}/{len(result)}")
             try:
                 prompt = INPUT_PROMPT.format(triples=triples)
-                output = llm.invoke(prompt).content.strip()
+
+                if "lora" in provider:
+                    flat = " | ".join(" | ".join(t) for t in triples)
+                    prompt = INPUT_PROMPT.format(triples=flat)
+                
+                output = run_llm(llm, prompt).strip()
                 if "</think>" in output:
                     output = output.split("<think>")[1].strip()
                 rate_limiter()
@@ -108,7 +117,7 @@ def main():
             print(f"[TRANSLATION] Entry {i+1}/{len(completed_data)}")
             try:
                 prompt = TRANS_INPUT.format(english_text=eng_text)
-                translation = llm.invoke(prompt).content.strip()
+                run_llm(llm, prompt).strip()
                 rate_limiter()
             except Exception as e:
                 print(f"Failed at index {i}: {e}")
