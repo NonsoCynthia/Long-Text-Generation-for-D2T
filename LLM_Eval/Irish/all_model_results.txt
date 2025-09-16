@@ -1,0 +1,56 @@
+aiXplainLlama_results_scores.json
+Model     Fluency   Grammaticality   No-Additions No-Omissions
+1             nan              nan            nan          nan
+2             nan              nan            nan          nan
+3            7.00             7.00           7.00         7.00
+4             nan              nan            nan          nan
+5            7.00             7.00           7.00         6.90
+6            4.14             4.38           5.10         4.67
+7            6.76             6.81           7.00         6.67
+8            7.00             7.00           7.00         6.71
+9            7.00             7.00           7.00         6.76
+10           7.00             6.95           6.95         6.10
+11           7.00             7.00           7.00         5.67
+
+GPT_results_scores.json
+Model     Fluency   Grammaticality   No-Additions No-Omissions
+1             nan              nan            nan          nan
+2             nan              nan            nan          nan
+3            5.48             5.48           4.19         5.76
+4             nan              nan            nan          nan
+5            5.14             5.19           4.71         5.24
+6            1.14             1.19           1.86         1.29
+7            3.38             3.48           4.48         3.95
+8            4.86             4.95           4.81         5.33
+9            3.95             4.10           4.05         3.48
+10           3.43             3.52           3.52         2.19
+11           4.10             4.24           4.14         1.71
+
+Claude_results_scores.json
+Model     Fluency   Grammaticality   No-Additions No-Omissions
+1             nan              nan            nan          nan
+2             nan              nan            nan          nan
+3            7.00             7.00           6.48         6.95
+4             nan              nan            nan          nan
+5            7.00             7.00           6.76         6.81
+6            1.76             2.10           3.29         2.57
+7            4.62             5.71           6.86         5.62
+8            6.00             6.43           6.71         6.29
+9            5.90             6.48           6.81         5.33
+10           5.24             6.38           6.57         3.38
+11           5.52             6.52           6.76         2.52
+
+aiXplainDeepseek_results_scores.json
+Model     Fluency   Grammaticality   No-Additions No-Omissions
+1             nan              nan            nan          nan
+2             nan              nan            nan          nan
+3            7.00             7.00           7.00         7.00
+4             nan              nan            nan          nan
+5            7.00             7.00           7.00         6.90
+6            4.19             4.24           4.95         4.81
+7            6.81             6.76           7.00         6.81
+8            7.00             7.00           7.00         7.00
+9            7.00             7.00           7.00         6.86
+10           7.00             7.00           7.00         6.48
+11           7.00             7.00           7.00         5.67
+
