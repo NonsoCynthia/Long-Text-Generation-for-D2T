@@ -1,9 +1,8 @@
 # Long-Text-Generation-for-D2T
 
-Code and experiment artefacts for the INLG 2025 paper:
+Scaling Up Data-to-Text Generation to Longer Sequences: A New Dataset and Benchmark Results for Generation from Large Triple Sets  https://aclanthology.org/2025.inlg-main.47/
 
-Scaling Up Data-to-Text Generation to Longer Sequences: A New Dataset and Benchmark Results for Generation from Large Triple Sets  
-https://aclanthology.org/2025.inlg-main.47/
+This paper introduces a long-input data-to-text benchmark designed to test whether modern LLMs can generate coherent, faithful longer texts from large RDF triple sets, addressing the fact that most existing datasets are short and English-centric. It builds a new DBpedia based dataset in English and Irish, with 537 triple sets ranging from 8 to 69 triples, and compares outputs from six LLMs, a rule based system (FORGe), and human written texts using LLM based evaluation. The results show clear differences between models and between English and Irish, highlighting both progress and remaining gaps for long-form, structured generation.
 
 ## Contents
 
